@@ -9,7 +9,7 @@ argocd app create load-test \
     --revision HEAD \
     --dest-server https://kubernetes.default.svc \
     --dest-namespace default
-argocd app sync load-test  
+argocd app sync load-test
 argocd app sync -l app.kubernetes.io/instance=load-test
 ```
 
