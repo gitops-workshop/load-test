@@ -1,0 +1,2 @@
+build:
+	./hack/gen.sh
