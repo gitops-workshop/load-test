@@ -13,6 +13,14 @@ argocd app sync load-test
 argocd app sync -l app.kubernetes.io/instance=load-test
 ```
 
+### Build
+
+To build templates:
+
+```
+make
+```
+
 ### Clean-up
 
 ```

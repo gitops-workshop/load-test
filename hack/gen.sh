@@ -3,7 +3,7 @@ set -eu
 
 mkdir -p apps/app-of-apps/templates
 
-for i in $(seq 1 500); do
+for i in $(seq -f "%04g" 1 500); do
   echo "$i/500"
   export user=user$i
   export app=app$i
