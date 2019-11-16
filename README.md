@@ -1,6 +1,12 @@
 # Load Test
 
-Create 500 apps.
+Login:
+
+```
+argocd login argo-cd-kubecon.apps.argoproj.io:443 --username admin
+```
+
+Create and sync apps:
 
 ```
 argocd app create load-test \
@@ -9,8 +15,6 @@ argocd app create load-test \
     --revision HEAD \
     --dest-server https://kubernetes.default.svc \
     --dest-namespace default
-argocd app sync load-test
-argocd app sync -l app.kubernetes.io/instance=load-test
 ```
 
 ### Build
@@ -21,8 +25,8 @@ To build templates:
 make
 ```
 
-### Clean-up
+### Clean Up
 
 ```
-argocd app delete load-test
+argocd app delete load-test --prune
 ```

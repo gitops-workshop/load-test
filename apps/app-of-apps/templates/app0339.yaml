@@ -14,3 +14,5 @@ spec:
     path: apps/app0339
     repoURL: https://github.com/gitops-workshop/load-test
     targetRevision: HEAD
+  syncPolicy:
+    automated: {}
