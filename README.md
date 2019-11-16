@@ -28,5 +28,5 @@ make
 ### Clean Up
 
 ```
-argocd app delete load-test --prune
+argocd app delete load-test
 ```

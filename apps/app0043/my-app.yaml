@@ -8,4 +8,6 @@ spec:
       image: alexcollinsintuit/my-app:v1
       imagePullPolicy: IfNotPresent
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true

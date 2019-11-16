@@ -15,4 +15,6 @@ spec:
     repoURL: https://github.com/gitops-workshop/load-test
     targetRevision: HEAD
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true
