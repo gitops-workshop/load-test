@@ -9,24 +9,11 @@ argocd login argo-cd-kubecon.apps.argoproj.io:443 --username admin
 Create and sync apps:
 
 ```
-argocd app create load-test \
-    --repo https://github.com/gitops-workshop/load-test.git \
-    --path apps/app-of-apps \
-    --revision HEAD \
-    --dest-server https://kubernetes.default.svc \
-    --dest-namespace default
-```
-
-### Build
-
-To build templates:
-
-```
-make
+./run.sh
 ```
 
 ### Clean Up
 
 ```
-argocd app delete load-test
+kubectl delete app -l load-test
 ```
