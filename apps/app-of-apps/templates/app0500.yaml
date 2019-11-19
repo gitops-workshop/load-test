@@ -13,7 +13,7 @@ spec:
   source:
     path: apps/app0500
     repoURL: https://github.com/gitops-workshop/load-test
-    targetRevision: HEAD
+    targetRevision: alexec
   syncPolicy:
     automated:
       prune: true

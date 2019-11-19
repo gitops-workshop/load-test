@@ -12,9 +12,11 @@ Create and sync apps:
 argocd app create load-test \
     --repo https://github.com/gitops-workshop/load-test.git \
     --path apps/app-of-apps \
-    --revision HEAD \
+    --revision alexec \
     --dest-server https://kubernetes.default.svc \
-    --dest-namespace default
+    --dest-namespace default \
+    --upsert
+    --auto-sync
 ```
 
 ### Build
