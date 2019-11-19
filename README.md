@@ -15,8 +15,8 @@ argocd app create load-test \
     --revision alexec \
     --dest-server https://kubernetes.default.svc \
     --dest-namespace default \
-    --upsert
-    --auto-sync
+    --upsert 
+time argocd app sync load-test
 ```
 
 ### Build

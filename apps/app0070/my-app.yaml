@@ -7,7 +7,3 @@ spec:
     - name: main
       image: alexcollinsintuit/my-app:v1
       imagePullPolicy: IfNotPresent
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
